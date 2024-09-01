@@ -50,9 +50,9 @@ namespace Fraction
 			Console.WriteLine(B++);
 			Console.WriteLine(B--);
 			Console.WriteLine(A<=D);
-            Console.WriteLine(A<D);
-            Console.WriteLine(A*C-B/D);
-            Console.WriteLine(D--);
+			Console.WriteLine(A<D);
+			Console.WriteLine(A*C-B/D);
+			Console.WriteLine(D--);
         }
 	}
 }
