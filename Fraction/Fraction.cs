@@ -137,8 +137,8 @@ namespace Fraction
 		{
 			left = left.ToImproper();
 			right = right.ToImproper();
-			
-			return (left.Numerator * right.Denominator > right.Numerator * left.Denominator)?true:false;
+
+			return left.Numerator * right.Denominator > right.Numerator * left.Denominator; //?true:false;
 		}
 
 		public static bool operator <(Fraction left, Fraction right)
@@ -146,14 +146,14 @@ namespace Fraction
 			left = left.ToImproper();
 			right = right.ToImproper();
 
-			return (left.Numerator * right.Denominator < right.Numerator * left.Denominator) ? true : false;
+			return left.Numerator * right.Denominator < right.Numerator * left.Denominator;// ? true : false;
 		}
 		public static bool operator >=(Fraction left, Fraction right)
 		{
 			left = left.ToImproper();
 			right = right.ToImproper();
 
-			return (left.Numerator * right.Denominator >= right.Numerator * left.Denominator) ? true : false;
+			return left.Numerator * right.Denominator >= right.Numerator * left.Denominator;// ? true : false;
 		}
 
 		public static bool operator <=(Fraction left, Fraction right)
@@ -161,7 +161,7 @@ namespace Fraction
 			left = left.ToImproper();
 			right = right.ToImproper();
 
-			return (left.Numerator * right.Denominator <= right.Numerator * left.Denominator) ? true : false;
+			return left.Numerator * right.Denominator <= right.Numerator * left.Denominator;//? true : false;
 		}
 
 		//				Conversion operators:
@@ -173,7 +173,7 @@ namespace Fraction
 			string fractPart = absNum.ToString().Substring(lengthInteg+1); // убираем целую часть
 			int numer = int.Parse(fractPart);
 			int denom = (int)Math.Pow(10, fractPart.Length);
-
+				
 			return new Fraction((num > 0? integ:-integ), numer, denom);
 		}
 

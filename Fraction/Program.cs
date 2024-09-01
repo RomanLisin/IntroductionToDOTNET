@@ -40,7 +40,7 @@ namespace Fraction
 			Fraction A = new Fraction(2,3,4);
 			Fraction B = new Fraction(1,1,3);
 			Fraction C = new Fraction(4, 1, 4);
-			Fraction D = new Fraction(2.75);
+			Fraction D = new Fraction(-2.75);
 			Console.WriteLine(new Fraction(1, 2) == new Fraction(5, 11));
 			Console.WriteLine(A * B);
 			Console.WriteLine(-C);
