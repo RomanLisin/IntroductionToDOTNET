@@ -225,10 +225,7 @@ namespace Fraction
 		{
 			//Fraction obj = new Fraction();
 			int gcd = GreatComDiv(Numerator, Denominator);
-			return new Fraction(Integer,
-								Numerator / gcd,
-								Denominator / gcd
-								);
+			return new Fraction(Integer, Numerator / gcd, Denominator / gcd);
 		}
 		public void Print()
 		{
